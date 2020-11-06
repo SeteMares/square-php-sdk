@@ -73,8 +73,6 @@ class TransactionsApi extends BaseApi
         ?string $sortOrder = null,
         ?string $cursor = null
     ): ApiResponse {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/refunds';
 
@@ -183,8 +181,6 @@ class TransactionsApi extends BaseApi
         ?string $sortOrder = null,
         ?string $cursor = null
     ): ApiResponse {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/transactions';
 
@@ -283,8 +279,6 @@ class TransactionsApi extends BaseApi
      */
     public function charge(string $locationId, \Square\Models\ChargeRequest $body): ApiResponse
     {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/transactions';
 
@@ -356,8 +350,6 @@ class TransactionsApi extends BaseApi
      */
     public function retrieveTransaction(string $locationId, string $transactionId): ApiResponse
     {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/transactions/{transaction_id}';
 
@@ -432,8 +424,6 @@ class TransactionsApi extends BaseApi
      */
     public function captureTransaction(string $locationId, string $transactionId): ApiResponse
     {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/transactions/{transaction_id}/capture';
 
@@ -519,8 +509,6 @@ class TransactionsApi extends BaseApi
         string $transactionId,
         \Square\Models\CreateRefundRequest $body
     ): ApiResponse {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/transactions/{transaction_id}/refund';
 
@@ -599,8 +587,6 @@ class TransactionsApi extends BaseApi
      */
     public function voidTransaction(string $locationId, string $transactionId): ApiResponse
     {
-        trigger_error('Method ' . __METHOD__ . ' is deprecated.', E_USER_DEPRECATED);
-
         //prepare query string for API call
         $_queryBuilder = '/v2/locations/{location_id}/transactions/{transaction_id}/void';
 
